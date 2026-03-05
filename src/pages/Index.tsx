@@ -4,6 +4,13 @@ import HeroSection from "@/components/HeroSection";
 import IntroSection from "@/components/IntroSection";
 import { articles } from "@/data/articles";
 import logo from "@/assets/Honeyman-logo.webp";
+import social1 from "@/assets/social-1.webp";
+import social2 from "@/assets/social-2.webp";
+import social3 from "@/assets/social-3.webp";
+import social4 from "@/assets/social-4.webp";
+import social5 from "@/assets/social-5.webp";
+import social6 from "@/assets/social-6.webp";
+import social7 from "@/assets/social-7.webp";
 
 const Index = () => {
   const featuredArticles = articles.slice(0, 6);
