@@ -1,10 +1,13 @@
 import { useState, useEffect } from "react";
 import { ArrowRight } from "lucide-react";
-import franchise1 from "@/assets/franchise-1.webp";
-import franchise2 from "@/assets/franchise-2.webp";
-import storeProducts from "@/assets/store-products.webp";
+import franchise1 from "@/assets/cafe-1.webp";
+import franchise2 from "@/assets/cafe-image.webp";
+import storeProducts from "@/assets/store-products (2).webp";
+import storeProducts3 from "@/assets/store-products(3).webp";
 import gifting1 from "@/assets/gifting-1.webp";
 import gifting2 from "@/assets/gifting-2.webp";
+import gifting3 from "@/assets/gifting-3.webp";
+
 
 interface PanelData {
   title: string;
@@ -26,7 +29,7 @@ const panels: PanelData[] = [
     linkText: "Explore Franchise",
     images: [franchise1, franchise2],
     bgColor: "from-amber-900/80 to-amber-700/60",
-    overlayColor: "bg-gradient-to-t from-amber-950/90 via-amber-900/40 to-transparent",
+    overlayColor: "",
   },
   {
     title: "Store",
@@ -34,9 +37,9 @@ const panels: PanelData[] = [
     description: "Pure, natural honey and specialty products delivered to your doorstep.",
     link: "https://honeymanstore.com",
     linkText: "Shop Now",
-    images: [storeProducts],
+    images: [storeProducts, storeProducts3],
     bgColor: "from-yellow-800/80 to-yellow-600/60",
-    overlayColor: "bg-gradient-to-t from-yellow-950/90 via-yellow-800/40 to-transparent",
+    overlayColor: "",
   },
   {
     title: "Gifting",
@@ -44,9 +47,9 @@ const panels: PanelData[] = [
     description: "Premium honey gift boxes for every occasion. Crafted with love.",
     link: "https://honeymangifting.com",
     linkText: "Send a Gift",
-    images: [gifting1, gifting2],
+    images: [gifting1, gifting2,gifting3],
     bgColor: "from-rose-900/80 to-amber-800/60",
-    overlayColor: "bg-gradient-to-t from-rose-950/90 via-rose-900/40 to-transparent",
+    overlayColor: "",
   },
 ];
 
@@ -71,7 +74,7 @@ const HeroSection = () => {
   return (
     <section className="w-full animate-fade-in">
       {/* Desktop: 3 columns side by side */}
-      <div className="hidden md:grid md:grid-cols-3 h-[85vh] gap-1 rounded-2xl overflow-hidden">
+      <div className="hidden md:grid md:grid-cols-3 h-[85vh] gap-1  overflow-hidden">
         {panels.map((panel, index) => (
           <a
             key={panel.title}
@@ -103,7 +106,7 @@ const HeroSection = () => {
             <div className={`absolute inset-0 ${panel.overlayColor} transition-opacity duration-500`} />
 
             {/* Content */}
-            <div className="absolute inset-0 flex flex-col justify-end p-8 lg:p-10 text-white">
+            <div className="absolute inset-0 flex flex-col justify-end p-8 lg:p-10 text-white ">
               <div className={`transform transition-all duration-500 ${
                 hoveredPanel === index ? "translate-y-0 opacity-100" : "translate-y-2"
               }`}>

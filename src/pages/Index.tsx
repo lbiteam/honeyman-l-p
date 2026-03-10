@@ -96,11 +96,11 @@ const Index = () => {
       </main>
 
       {/* Footer */}
-      <footer className="bg-[hsl(var(--honey-dark))] text-white/80 mt-16">
+      <footer className="bg-[#97430b] text-white/80 mt-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
             <div>
-              <img src={logo} alt="Honeyman" className="h-20 md:h-24 w-auto mb-4" />
+              <img src={logo} alt="Honeyman" className="h-16 sm:h-12 md:h-20 w-auto object-contain scale-[1.75]" />
               <p className="text-sm text-white/60">Delivering Purity Since 1980</p>
             </div>
             <div>
