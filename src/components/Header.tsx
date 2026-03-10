@@ -57,7 +57,7 @@ const Header = () => {
               About
             </Link>
             <Link
-              to="/wellness"
+              to="/blog"
               className="hover:text-amber-600 transition-colors"
             >
               Blog
@@ -151,7 +151,7 @@ const Header = () => {
               About
             </Link>
             <Link
-              to="/wellness"
+              to="/blog"
               onClick={() => setMobileMenuOpen(false)}
               className="block py-3 text-sm font-bold text-gray-800 border-b border-amber-50"
             >
