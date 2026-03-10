@@ -136,8 +136,8 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold mb-1">Location</h3>
-                    <p className="text-muted-foreground">San Francisco, CA</p>
-                    <p className="text-muted-foreground text-sm">Remote-first team</p>
+                    <p className="text-muted-foreground">Gurugram, HQ 122018</p>
+                    <p className="text-muted-foreground text-sm">India</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
